@@ -19,6 +19,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mainmenu</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -26,7 +27,6 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_cthulhu</object>
     <object>objects\obj_enemyManager</object>
-    <object>objects\object4</object>
     <objects name="Main menu">
       <object>objects\obj_newgame</object>
       <object>objects\obj_options</object>
