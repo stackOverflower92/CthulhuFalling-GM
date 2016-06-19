@@ -15,6 +15,13 @@
       <sprite>sprites\spr_options</sprite>
       <sprite>sprites\spr_credits</sprite>
       <sprite>sprites\spr_exit</sprite>
+      <sprite>sprites\spr_playAgain</sprite>
+    </sprites>
+    <sprites name="HUD">
+      <sprite>sprites\spr_life</sprite>
+    </sprites>
+    <sprites name="Bonus">
+      <sprite>sprites\spr_bonus</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -22,6 +29,9 @@
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\stop_bonus.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
@@ -33,11 +43,20 @@
       <object>objects\obj_credits</object>
       <object>objects\obj_exit</object>
       <object>objects\obj_cursor</object>
+      <object>objects\obj_playAgain</object>
     </objects>
+    <objects name="Bonus">
+      <object>objects\obj_bonusManager</object>
+      <object>objects\obj_bonusLife</object>
+    </objects>
+    <object>objects\obj_levelEnd</object>
+    <object>objects\obj_scoreManager</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_level1</room>
+    <room>rooms\rm_dead</room>
+    <room>rooms\rm_credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
