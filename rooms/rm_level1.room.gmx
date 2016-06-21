@@ -98,6 +98,7 @@
     <instance objName="obj_wall" x="576" y="64" name="inst_0AF3913B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_scoreManager" x="64" y="0" name="inst_2A9AB99A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_currentBonusDisplay" x="96" y="0" name="inst_567CCFD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door12" x="576" y="32" name="inst_22A84765" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -23,21 +23,28 @@
     <sprites name="Bonus">
       <sprite>sprites\spr_bonus</sprite>
     </sprites>
+    <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\spr_bigCthulhu</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mainmenu</background>
     <background>background\background1</background>
+    <background>background\background2</background>
+    <background>background\rlyeh</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <paths name="Big Cthulhu">
+      <path>paths\pth_attack2</path>
+      <path>paths\pth_attack1</path>
+      <path>paths\pth_idle</path>
+    </paths>
+  </paths>
   <scripts name="scripts">
     <script>scripts\stop_bonus.gml</script>
     <script>scripts\reset_bonus_manager.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_wall</object>
-    <object>objects\obj_cthulhu</object>
-    <object>objects\obj_enemyManager</object>
     <objects name="Main menu">
       <object>objects\obj_newgame</object>
       <object>objects\obj_options</object>
@@ -50,15 +57,31 @@
       <object>objects\obj_bonusManager</object>
       <object>objects\obj_bonusLife</object>
       <object>objects\obj_currentBonusDisplay</object>
+      <object>objects\obj_bonusDestroyAll</object>
+      <object>objects\obj_bonus</object>
     </objects>
     <object>objects\obj_levelEnd</object>
     <object>objects\obj_scoreManager</object>
+    <objects name="Enemy">
+      <object>objects\obj_cthulhu</object>
+      <object>objects\obj_enemyManager</object>
+      <object>objects\obj_bigCthulhu</object>
+    </objects>
+    <objects name="Environment">
+      <object>objects\obj_wall</object>
+      <object>objects\obj_door12</object>
+    </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\tml_bigCthulhuAttacks</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_dead</room>
     <room>rooms\rm_credits</room>
+    <room>rooms\rm_level2</room>
+    <room>rooms\rm_bossCthulhu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
