@@ -32,6 +32,7 @@ vsp = 0;
 jumpspeed = 10;
 movespeed = 4;
 hp = 100;
+facing = 1;
 </string>
           </argument>
         </arguments>
@@ -75,12 +76,27 @@ hp = 100;
           <argument>
             <kind>1</kind>
             <string>/// Get player input
-key_right = keyboard_check(vk_right);
-key_left = -keyboard_check(vk_left);
+key_right = keyboard_check(ord('D'));
+key_left = -keyboard_check(ord('A'));
 key_jump = keyboard_check_pressed(vk_space);
+key_shoot = mouse_check_button_pressed(mb_left);
 
 move = key_left + key_right;
 hsp = move * movespeed;
+
+// Shooting
+if (key_right) {
+   facing = 1;
+} 
+
+if (-key_left) {
+  facing = -1;
+}
+
+if (key_shoot) {
+   // Spawn a bullet
+   instance_create(x, y, obj_bullet);
+}
 
 if (vsp &lt; 10) vsp += grav;
 

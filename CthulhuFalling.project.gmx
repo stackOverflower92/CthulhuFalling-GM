@@ -25,6 +25,7 @@
     </sprites>
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_bigCthulhu</sprite>
+    <sprite>sprites\spr_bullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mainmenu</background>
@@ -66,10 +67,15 @@
       <object>objects\obj_cthulhu</object>
       <object>objects\obj_enemyManager</object>
       <object>objects\obj_bigCthulhu</object>
+      <object>objects\obj_enemy</object>
     </objects>
     <objects name="Environment">
       <object>objects\obj_wall</object>
       <object>objects\obj_door12</object>
+      <object>objects\obj_environmentItem</object>
+    </objects>
+    <objects name="Weapons">
+      <object>objects\obj_bullet</object>
     </objects>
   </objects>
   <timelines name="timelines">
