@@ -6,9 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_cthulhu</sprite>
     <sprites name="Main menu">
       <sprite>sprites\spr_newgame</sprite>
       <sprite>sprites\spr_cursor</sprite>
@@ -23,9 +20,21 @@
     <sprites name="Bonus">
       <sprite>sprites\spr_bonus</sprite>
     </sprites>
-    <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\spr_bigCthulhu</sprite>
-    <sprite>sprites\spr_bullet</sprite>
+    <sprites name="Enemy">
+      <sprite>sprites\spr_cthulhuRed</sprite>
+      <sprite>sprites\spr_cthulhu</sprite>
+      <sprite>sprites\spr_bigCthulhu</sprite>
+    </sprites>
+    <sprites name="Environment">
+      <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_wall</sprite>
+    </sprites>
+    <sprites name="Characters">
+      <sprite>sprites\spr_player</sprite>
+    </sprites>
+    <sprites name="Weapons">
+      <sprite>sprites\spr_bullet</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mainmenu</background>
@@ -43,9 +52,28 @@
   <scripts name="scripts">
     <script>scripts\stop_bonus.gml</script>
     <script>scripts\reset_bonus_manager.gml</script>
+    <script>scripts\camera_movement.gml</script>
+    <scripts name="LightEngine">
+      <script>scripts\SL_light_cast_obj.gml</script>
+      <script>scripts\SL_ToD_default.gml</script>
+      <script>scripts\SL_light_free.gml</script>
+      <script>scripts\SL_light_ini_begin.gml</script>
+      <script>scripts\SL_draw_sprite_shadow.gml</script>
+      <script>scripts\SL_global_cast_obj.gml</script>
+      <script>scripts\SL_engine_ini_end.gml</script>
+      <script>scripts\SL_add_light.gml</script>
+      <script>scripts\SL_engine_render.gml</script>
+      <script>scripts\SL_engine_draw.gml</script>
+      <script>scripts\SL_cast_sprite.gml</script>
+      <script>scripts\SL_draw_sprite_light.gml</script>
+      <script>scripts\SL_sprite_set_ambient.gml</script>
+      <script>scripts\SL_set_time.gml</script>
+      <script>scripts\SL_light_ini_end.gml</script>
+      <script>scripts\SL_engine_ini_begin.gml</script>
+      <script>scripts\SL_engine_free.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_player</object>
     <objects name="Main menu">
       <object>objects\obj_newgame</object>
       <object>objects\obj_options</object>
@@ -55,27 +83,33 @@
       <object>objects\obj_playAgain</object>
     </objects>
     <objects name="Bonus">
-      <object>objects\obj_bonusManager</object>
-      <object>objects\obj_bonusLife</object>
-      <object>objects\obj_currentBonusDisplay</object>
-      <object>objects\obj_bonusDestroyAll</object>
       <object>objects\obj_bonus</object>
+      <object>objects\obj_bonusManager</object>
+      <object>objects\obj_currentBonusDisplay</object>
+      <object>objects\obj_bonusLife</object>
+      <object>objects\obj_bonusDestroyAll</object>
     </objects>
-    <object>objects\obj_levelEnd</object>
-    <object>objects\obj_scoreManager</object>
     <objects name="Enemy">
-      <object>objects\obj_cthulhu</object>
-      <object>objects\obj_enemyManager</object>
-      <object>objects\obj_bigCthulhu</object>
       <object>objects\obj_enemy</object>
+      <object>objects\obj_enemyManager</object>
+      <object>objects\obj_cthulhu</object>
+      <object>objects\obj_bigCthulhu</object>
+      <object>objects\obj_cthulhuRed</object>
     </objects>
     <objects name="Environment">
       <object>objects\obj_wall</object>
+      <object>objects\obj_levelEnd</object>
       <object>objects\obj_door12</object>
       <object>objects\obj_environmentItem</object>
     </objects>
     <objects name="Weapons">
       <object>objects\obj_bullet</object>
+    </objects>
+    <objects name="Characters">
+      <object>objects\obj_player</object>
+    </objects>
+    <objects name="Scores">
+      <object>objects\obj_scoreManager</object>
     </objects>
   </objects>
   <timelines name="timelines">

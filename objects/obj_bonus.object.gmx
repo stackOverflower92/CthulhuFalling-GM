@@ -36,6 +36,13 @@ c2 = c_red;
 c3 = c_red;
 c4 = c_red;
 avail = false;
+
+// Display
+dw = display_get_width();
+dh = display_get_height();
+
+x = random(dw - sprite_width);
+y = view_yview[0] - sprite_height;
 </string>
           </argument>
         </arguments>
@@ -98,8 +105,8 @@ if (place_meeting(x, y, obj_player)) {
 
     // Show particle effects only if visible
     if (visible) {
-        effect_create_above(ef_firework, x, y, 1, c_yellow);
-        effect_create_above(ef_firework, x, y, 1, c_white);
+        effect_create_above(ef_spark, x, y, 1, c_yellow);
+        effect_create_above(ef_spark, x, y, 1, c_white);
     }
     
     // Set availability to true
