@@ -38,7 +38,7 @@ max_size = 64;
 c_size = floor(random_range(min_size, max_size));
 
 // Assign position
-x = random(dw - c_size);
+x = random_range(view_xview[0], view_xview[0] + view_wview[0]);
 y = view_yview[0] - c_size;
 
 // Health
