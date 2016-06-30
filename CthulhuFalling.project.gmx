@@ -33,14 +33,17 @@
       <sprite>sprites\spr_player</sprite>
     </sprites>
     <sprites name="Weapons">
+      <sprite>sprites\spr_pencil</sprite>
       <sprite>sprites\spr_bullet</sprite>
     </sprites>
+    <sprite>sprites\spr_dirt</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mainmenu</background>
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\rlyeh</background>
+    <background>background\bg_groundTiles1</background>
   </backgrounds>
   <paths name="paths">
     <paths name="Big Cthulhu">
@@ -97,10 +100,11 @@
       <object>objects\obj_cthulhuRed</object>
     </objects>
     <objects name="Environment">
-      <object>objects\obj_wall</object>
-      <object>objects\obj_levelEnd</object>
-      <object>objects\obj_door12</object>
       <object>objects\obj_environmentItem</object>
+      <object>objects\obj_levelEnd</object>
+      <object>objects\obj_wall</object>
+      <object>objects\obj_door12</object>
+      <object>objects\obj_dirt</object>
     </objects>
     <objects name="Weapons">
       <object>objects\obj_bullet</object>
@@ -116,12 +120,22 @@
     <timeline>timelines\tml_bigCthulhuAttacks</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
-    <room>rooms\rm_level1</room>
-    <room>rooms\rm_dead</room>
-    <room>rooms\rm_credits</room>
-    <room>rooms\rm_level2</room>
-    <room>rooms\rm_bossCthulhu</room>
+    <rooms name="Level 1">
+      <room>rooms\rm_level1</room>
+    </rooms>
+    <rooms name="Level 2">
+      <room>rooms\rm_level2</room>
+    </rooms>
+    <rooms name="Transitions">
+      <room>rooms\rm_dead</room>
+    </rooms>
+    <rooms name="Menus">
+      <room>rooms\rm_menu</room>
+      <room>rooms\rm_credits</room>
+    </rooms>
+    <rooms name="Bosses">
+      <room>rooms\rm_bossCthulhu</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
