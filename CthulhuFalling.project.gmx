@@ -44,6 +44,7 @@
     </sprites>
     <sprite>sprites\spr_cthuluHive</sprite>
     <sprite>sprites\spr_cthulhuRedHive</sprite>
+    <sprite>sprites\spr_ladder</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_mainmenu</background>
@@ -113,11 +114,13 @@
         <object>objects\obj_water</object>
       </objects>
       <objects name="Common">
+        <object>objects\obj_environmentItem</object>
+        <object>objects\obj_levelEnd</object>
+        <object>objects\obj_climbItem</object>
         <object>objects\obj_dirt</object>
         <object>objects\obj_wall</object>
-        <object>objects\obj_levelEnd</object>
-        <object>objects\obj_environmentItem</object>
         <object>objects\obj_door12</object>
+        <object>objects\obj_ladder</object>
       </objects>
     </objects>
     <objects name="Weapons">
