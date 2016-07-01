@@ -25,23 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Calculate starting position and size
-
-// Display
-dw = display_get_width();
-dh = display_get_height();
-
-// Calculate cthulhu size and position
-min_size = 16;
-max_size = 64;
-
-c_size = floor(random_range(min_size, max_size));
-
-// Assign position
-x = random_range(view_xview[0], view_xview[0] + view_wview[0]);
-y = view_yview[0] - c_size;
-
-// Health
+            <string>/// Set variables
 hp = 200;
 </string>
           </argument>

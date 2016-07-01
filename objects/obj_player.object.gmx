@@ -29,8 +29,8 @@
 grav = 0.4;
 hsp = 0;
 vsp = 0;
-jumpspeed = 10;
-movespeed = 4;
+jumpspeed = 7;
+movespeed = 2.5;
 hp = 100;
 facing = 1;
 </string>
