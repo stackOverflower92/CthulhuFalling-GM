@@ -103,20 +103,20 @@ if (key_shoot) {
 // Apply gravity
 if (vsp &lt; 10) vsp += grav;
 
+// Check jump
 if (place_meeting(x, y + 1, obj_environmentItem)) {
     vsp = key_jump * -jumpspeed;
 } 
 
+// Check climb items
 if (place_meeting(x, y, obj_climbItem)) {
     vsp = key_jump * -jumpspeed;
 
     if (key_climb_up) {
-       show_debug_message("Climb");
        vsp = -movespeed;
     }
    
     if (key_climb_down) {
-       show_debug_message("Down");
        vsp = movespeed;
     }
 }
