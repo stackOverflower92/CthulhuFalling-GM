@@ -160,7 +160,10 @@ y += vsp;
             <kind>1</kind>
             <string>/// Check lives
 if (place_meeting(x, y, obj_enemy)) {
-    // Collision detected, decrease lives
+    // Collision detected
+    // Shake screen
+    instance_create(x, y, obj_screenShake);
+    
     if (lives &gt; 1) {
         // Decrease lives
         lives--;
